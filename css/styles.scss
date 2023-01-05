@@ -1,0 +1,309 @@
+$Fraunces: "Fraunces", serif;
+$Barlow: "Barlow", sans-serif;
+$Lato: "Lato", sans-serif;
+$titleArticle: #232a36;
+$pTagArticle: #9d9aa3;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fffbf8;
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(215, 215, 223); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */ /* creates padding around scroll thumb */
+}
+ol,
+li {
+  list-style: none;
+}
+
+header {
+  height: 100vh;
+  background-image: url(../assets/img/desktop/image-header.jpg);
+  background-position: center;
+  background-size: cover;
+  .header-top {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    .logo {
+      display: flex;
+      align-items: center;
+      width: 50%;
+      h1 {
+        display: block;
+        padding: 1em;
+        font-family: $Lato;
+        color: #ffffff;
+        font-size: 1.6rem;
+      }
+    }
+    nav {
+      display: flex;
+      width: 50%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      img {
+        display: none;
+      }
+      ul {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+        li {
+          a {
+            display: block;
+            padding: 1em;
+            font-family: $Barlow;
+            font-weight: 500;
+            color: #ffffff;
+            text-decoration: none;
+          }
+          .contact {
+            font-family: $Fraunces;
+            background-color: #ffffff;
+            color: #000000;
+            border-radius: 2em;
+            margin-right: 1em;
+          }
+        }
+      }
+    }
+  }
+  .icon-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    h1 {
+      padding: 0em;
+      margin-top: -1.5em;
+      font-family: $Fraunces;
+      color: #ffffff;
+      font-size: 5rem;
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  article {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      h1 {
+        width: 50%;
+        color: $titleArticle;
+        font-size: 2rem;
+        font-family: $Fraunces;
+        font-weight: 900;
+        text-align: left;
+      }
+      p {
+        width: 50%;
+        text-align: left;
+        color: $pTagArticle;
+        font-family: $Barlow;
+        font-size: 1.2rem;
+        line-height: 1.5;
+      }
+      a {
+        margin-right: 30%;
+        padding: 0.5em;
+        font-family: $Fraunces;
+        font-weight: 900;
+        text-decoration: none;
+        text-align: left;
+        color: $titleArticle;
+        hr {
+          margin-top: -0.5em;
+          border: none;
+          border-bottom: 10px solid rgba(255, 255, 0, 0.493);
+        }
+      }
+      a:hover > hr {
+        border-bottom: 10px solid rgba(255, 255, 0, 0.938);
+      }
+    }
+    .img-article {
+      width: 50%;
+      padding: 0;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.article-footer {
+  .footer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .img-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      h1 {
+        font-family: $Fraunces;
+        font-weight: 900;
+      }
+      p {
+        width: 50%;
+        font-family: $Barlow;
+        font-size: 1rem;
+        text-align: center;
+      }
+      .graphic_design {
+        color: #255b51;
+      }
+      .photography {
+        color: #195168;
+      }
+    }
+  }
+  #box1 {
+    left: 0;
+  }
+  #box2 {
+    right: 0;
+  }
+}
+
+.client-testimonials {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7em;
+  .testimonial-title {
+    display: block;
+    padding-top: 4em;
+    padding-bottom: 2em;
+    font-family: $Fraunces;
+    color: #a9a9a9;
+  }
+  .testimonial-content {
+    display: flex;
+    width: 80%;
+    gap: 1em;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .testimonial-card {
+      display: flex;
+      width: 30%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 20%;
+        border-radius: 100%;
+      }
+      p {
+        font-family: $Barlow;
+        line-height: 1.5;
+        text-align: center;
+        color: #676769;
+      }
+      h2 {
+        font-family: $Fraunces;
+        font-weight: 900;
+        font-size: 1rem;
+        padding-top: 2em;
+      }
+      span {
+        font-family: $Barlow;
+        color: #a9a9a9;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.clipper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  img {
+    width: 25%;
+  }
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #90d4c5;
+  h1 {
+    font-family: $Lato;
+    color: #2d7464;
+    font-weight: 900;
+    font-size: 3rem;
+  }
+  .link-us {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-bottom: 2em;
+    a {
+      font-family: $Barlow;
+      text-decoration: none;
+      color: #2d7466;
+    }
+  }
+  .socials {
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    gap: 1.5em;
+    margin-bottom: 1em;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-family: $Lato;
+  padding: 1.5em;
+  color: #2d2d2d;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

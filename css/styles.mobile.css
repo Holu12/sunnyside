@@ -1,0 +1,167 @@
+header .header-top nav {
+  width: 90%;
+}
+
+header .header-top nav .triangle {
+  display: none;
+  position: absolute;
+  right: 10%;
+  top: 5em;
+  width: 0px;
+  height: 0px;
+  border-left: 35px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 40px solid white;
+}
+
+header .header-top nav img {
+  padding: 2em;
+  display: block;
+}
+
+header .header-top nav ul {
+  position: absolute;
+  display: none;
+  width: 80%;
+  height: 60vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 80%;
+  right: 10%;
+  background-color: #ffffff;
+  padding: 0em;
+}
+
+header .header-top nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header-top nav ul li a {
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding: 1em;
+  font-size: 1rem;
+  color: #2d7466;
+}
+
+header .header-top nav ul li .contact {
+  width: 100%;
+  background-color: #fbd601;
+  color: #1b1d1c;
+  margin: 0;
+}
+
+header .icon-wrap h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+main article {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main article section {
+  width: 100%;
+}
+
+main article section h1 {
+  width: 90%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+main article section p {
+  width: 90%;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+main article section a {
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+main article .img-article {
+  width: 100%;
+}
+
+main #article_1 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse;
+          flex-flow: column-reverse;
+}
+
+main .article-footer .footer-box {
+  width: 100%;
+}
+
+main .article-footer .footer-box .img-text {
+  height: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .article-footer .footer-box .img-text h1 {
+  font-size: 2rem;
+}
+
+main .article-footer .footer-box .img-text p {
+  width: 90%;
+  font-size: 1rem;
+}
+
+main .client-testimonials .testimonial-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .client-testimonials .testimonial-content .testimonial-card {
+  width: 100%;
+}
+
+main .client-testimonials .testimonial-content .testimonial-card img {
+  margin-top: 2em;
+}
+
+main .client-testimonials .testimonial-content .testimonial-card p {
+  font-size: 1.5rem;
+}
+
+main .client-testimonials .testimonial-content .testimonial-card h2 {
+  font-size: 2rem;
+}
+
+main .clipper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .clipper img {
+  width: 50%;
+}
+/*# sourceMappingURL=styles.mobile.css.map */
